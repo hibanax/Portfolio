@@ -9,5 +9,7 @@ export const Container = styled(motion.footer)`
     position: fixed;
     bottom: 0;
     z-index: 99999;
-
+    font-family: 'Open Sans';
+    padding-top: 40px;
+    color: white;
 `;
