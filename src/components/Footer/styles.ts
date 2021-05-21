@@ -2,14 +2,14 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const Container = styled(motion.footer)`
-    width: 100%;
+    width: auto;
     height: 300px;
-    background: black;
+    background: #000512;
 
     position: fixed;
     bottom: 0;
     z-index: 99999;
     font-family: 'Open Sans';
-    padding-top: 40px;
-    color: white;
+    padding-top: 30px;
+
 `;

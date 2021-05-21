@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
+
 export const Main = styled.main`
 
 
     .first {
-        background: red;
+        background: #F73458;
         overflow: hidden;
         
 
@@ -15,7 +16,7 @@ export const Main = styled.main`
     }
 
     .a {
-        background: #f5f1ea;
+        background: #F9F5DE;
         height: 100%;
         display: flex;
         align-items: flex-end;
@@ -23,45 +24,58 @@ export const Main = styled.main`
         .left-side {
             width: 50%;
             height: 100%;
-            background: #7dbb91
+            background: #F73458
         }
         
         .right-side {
-            width: 50%;
-            height: 100%;
+            width: 50vw;
+            height: 100vh;
 
-            .right-image {
-                background: #7dbb91;
-                width: 100%;
-                height: 100%;
+                
             }
+
+            .photo {
+                margin-top: 10vh;
+                
+
+
+@media (max-width:960px) { 
+        transform: translateX(-20%) translateY(4.4%); 
+        width: 80vw;      
+
+} //nothing with screen size bigger than 960px
+
+@media (min-width:960px) {       
+    min-width: 45vw;
+    max-width: 45vw;
+    min-height: 60vw;
+    max-height: 60vh; 
+  
+ } //nothing with screen size smaller than 960px
+            }
+            
         }
         
     }
 
     .b {
-        background: #582534;
+        background: #F75334;
         width: 100%;
         height: 100%
     }
 
     .c {
-        background: #0a7397;
+        background: #2B96C5;
         width: 100%;
         height: 100%;
     }
 }
 
 .second {
-    background: green;
+    background: #3FB775;
     
 }
 
-
-
-.fourth {
-    background: blue;
-}
 `;
 
 export const Section = styled.div`

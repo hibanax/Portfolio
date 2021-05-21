@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export const Container = styled(motion.footer)`
     width: 100%;
     height: 100%;
-    background: green;
+    background: #94C52B;
 
 
 `;

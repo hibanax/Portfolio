@@ -1,6 +1,7 @@
 import { motion, useTransform, useViewportScroll } from 'framer-motion';
 import React from 'react';
 import { Sticky } from '../../styles';
+import photo from './photo.png';
 
 const FirstAndSecond: React.FC = () => {
 
@@ -78,7 +79,7 @@ const First: React.FC = () => {
   const rightSideX = useTransform(
     scrollYProgress,
     [0.037, 0.093],
-    ['-45vh', '0vh'],
+    ['-65vw', '0vh'],
   )
 
   const offsetY = useTransform(
@@ -96,41 +97,44 @@ const First: React.FC = () => {
       style={{
         scale: firstScale,
         borderRadius: firstRadius,
-      }}
-    >
-      <motion.div 
-      className="offset" 
-      style={{ 
-        y: offsetY,
       }}>
-      <div className="a">
-        <motion.div 
-        className="left-side" 
+      <motion.div
+        className="offset"
         style={{
-          height: leftSideHeight,
-        }}
-      />
+          y: offsetY,
+        }}>
 
-        <div className="right-side">
+        <div className="a">
           <motion.div
-            className="right-image"
+            className="left-side"
             style={{
-              x: rightSideX,
-              scale: rightSideScale,
-            }}
-          />
+              height: leftSideHeight,
+            }}>
+
+          </motion.div>
+
+          <div className="right-side">
+            <motion.div
+              className="right-image"
+              style={{
+                x: rightSideX,
+                scale: rightSideScale,
+              }}>
+                <img src={photo} className="photo" />
+              </motion.div>
         </div>
       </div>
 
-      <div className="b"></div>
-       
-      
-      <div className="c"></div>
+            <div className="b"></div>
+
+
+            <div className="c"></div>
       </motion.div>
+      
 
 
 
-    </Sticky >
+      </Sticky>
   )
 }
 

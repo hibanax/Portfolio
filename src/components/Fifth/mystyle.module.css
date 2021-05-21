@@ -1,0 +1,18 @@
+.logo {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.svg {
+    margin-top: 5vh;
+    max-height: 36vh;
+    max-width: 36vw;
+    transform: rotate(180deg);
+    justify-content: center;
+    align-items: center;
+}
+
