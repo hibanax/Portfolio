@@ -17,7 +17,7 @@
 
 .logo {
     cursor: pointer;
-    margin-top: 18vh;
+    margin-top: 21vh;
     margin-left: 7vw;
     -webkit-transition: -moz-transform .3s ease-out; 
     -moz-transition: -webkit-transform .3s ease-out;        
@@ -38,12 +38,14 @@
 nav {
     flex: 1;
     text-align: right;
-    margin-top: 18vh;
+    margin-top: 21vh;
+    margin-right: 5vw;
 }
 
 nav ul li {
+    
     list-style: none;
-    margin-left: 8vw;
+    margin-left: 6vw;
     display: flex;
     float: right;
     -webkit-transition: -moz-transform .3s ease-out; 

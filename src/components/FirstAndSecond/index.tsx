@@ -1,7 +1,11 @@
+import { faOdnoklassniki } from '@fortawesome/free-brands-svg-icons';
 import { motion, useTransform, useViewportScroll } from 'framer-motion';
 import React from 'react';
 import { Sticky } from '../../styles';
+import Third from '../Third';
+import Video from '../Video/video';
 import photo from './photo.png';
+
 
 const FirstAndSecond: React.FC = () => {
 
@@ -20,23 +24,27 @@ const FirstAndSecond: React.FC = () => {
     [0.511, 0.8]
   )
 
+  
+
 
   // const firstX = useTransform(
   //   scrollYProgress,
   //   [0.627, 0.730, 0.8],
   //   ["0%", "-30%", "-70%"]
   // );
-
+   
   return (
     <Sticky className="second">
       <First />
+      
 
-
+      
       <motion.div style={{
         position: 'absolute',
         top: 0,
         left: 0,
         right: 0,
+        zIndex: 0,
         height: '100vh',
         borderRadius: '4px',
         border: '4px solid #fff',
@@ -44,7 +52,9 @@ const FirstAndSecond: React.FC = () => {
         scale: frameScale,
         // x: firstX,
 
-      }} />
+      }}>
+        <Video />
+         </motion.div>
     </Sticky>
   )
 }
@@ -79,7 +89,7 @@ const First: React.FC = () => {
   const rightSideX = useTransform(
     scrollYProgress,
     [0.037, 0.093],
-    ['-65vw', '0vh'],
+    ['55vw', '0vh'],
   )
 
   const offsetY = useTransform(
@@ -110,6 +120,16 @@ const First: React.FC = () => {
             style={{
               height: leftSideHeight,
             }}>
+              <div className="row">
+                <div className="col">
+                  <h1>Hey!</h1>
+                  <p>I am Christian Gałeczka nice to meet you</p>
+                </div>
+                <button type="button">Let's go!</button>
+                <div className="col">
+
+                </div>
+              </div>
 
           </motion.div>
 
@@ -125,10 +145,12 @@ const First: React.FC = () => {
         </div>
       </div>
 
-            <div className="b"></div>
+            <div className="b"><Third /></div>
 
 
-            <div className="c"></div>
+            <div className="c">
+            
+            </div>
       </motion.div>
       
 
@@ -136,6 +158,7 @@ const First: React.FC = () => {
 
       </Sticky>
   )
-}
+  }
+
 
 export default FirstAndSecond;

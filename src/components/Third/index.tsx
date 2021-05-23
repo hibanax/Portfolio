@@ -1,5 +1,7 @@
 import { useTransform, useViewportScroll } from 'framer-motion';
 import React from 'react';
+import Service from '../Service/service';
+import Video from '../Video/video';
 
 import { Container } from './styles';
 
@@ -17,8 +19,9 @@ const Third: React.FC = () => {
     <Container
       style={{
         x: thirdX
-      }}
-    />
+      }}>
+          <Service />
+      </Container>
   )
 }
 

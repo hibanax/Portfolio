@@ -26,11 +26,11 @@
 }
 
 .footer__content p{
-    max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
     font-size: 0.93rem;
     word-spacing: 5px;
+    justify-content: center;
 }
 
 .footer__socials a{
@@ -44,8 +44,7 @@
     margin-top: 81px;
     width: 100vw;
     display:flex;
-    justify-content: flex-start;
-    align-items: flex-end;
+    
     
 }
 

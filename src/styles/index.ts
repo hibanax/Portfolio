@@ -26,6 +26,51 @@ export const Main = styled.main`
             height: 100%;
             background: #F73458
         }
+
+        .row {
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-left: 10%;
+
+        }
+
+        .col {
+            margin-top: 20%;
+            flex-basis:50%;
+        }
+
+        .col h1 {
+            max-width:2vw;
+            color: black;
+            font-size: 50px;
+            margin-bottom: 2vh;
+        }
+
+        p { 
+            font-size: 20px;
+            line-height: 30px;
+            
+            
+        }
+
+        button { 
+            width: 50px;
+            height: 300px;
+            color: #F73458;
+            font-size: 12px;
+            padding: 12px 0;
+            background: #F9F5DE;
+            border: 0;
+            border-radius: 20px;
+            outline: none;
+            margin-top: 25%;
+            margin-left: 25%;
+
+            -webkit-box-shadow: 0px 0px 5px 0.5px #F9F5DE; 
+box-shadow: 0px 0px 5px 0.5px #F9F5DE;
+        }
         
         .right-side {
             width: 50vw;
@@ -35,27 +80,24 @@ export const Main = styled.main`
             }
 
             .photo {
-                margin-top: 10vh;
+                margin-top: 12vh;
                 
 
 
 @media (max-width:960px) { 
-        transform: translateX(-20%) translateY(4.4%); 
-        width: 80vw;      
+        transform: translateX(-20%) translateY(100%); 
+        width: 150%;    
+          
 
 } //nothing with screen size bigger than 960px
 
 @media (min-width:960px) {       
-    min-width: 45vw;
-    max-width: 45vw;
-    min-height: 60vw;
-    max-height: 60vh; 
-  
- } //nothing with screen size smaller than 960px
-            }
-            
-        }
-        
+    width: 42vw;
+    max-width: 50vw;
+    height: auto;
+ } 
+            } 
+        } 
     }
 
     .b {
@@ -69,13 +111,42 @@ export const Main = styled.main`
         width: 100%;
         height: 100%;
     }
-}
+
+    .col__cards {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 100%;
+        
+    }
+
+    .card {
+        width: 200px;
+        height: 230px;
+        border-radius: 10px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 10px 27px;
+
+        justify-content: center;
+        display: inline-block;
+        -webkit-box-shadow: 0px 0px 5px 0.5px #F9F5DE; 
+        box-shadow: 0px 0px 20px 0.2px #F9F5DE;
+        transition: transform 0.6s;
+
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
 
 .second {
     background: #3FB775;
     
 }
-
+}
 `;
 
 export const Section = styled.div`

@@ -1,0 +1,58 @@
+.parent {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 27px;
+    grid-row-gap: 6px;
+    border: 1px solid red;
+    padding-left: 27px;
+    padding-right: 27px;
+
+
+}
+   
+    
+    .div1 { grid-area: 3 / 1 / 5 / 2; border: 1px solid red; text-align: center; border-radius: 21px;    transition: transform .2s ease-in-out; /* Animation */
+    }
+    .div2 { grid-area: 3 / 2 / 5 / 3; border: 1px solid violet; text-align: center; border-radius: 21px;    transition: transform .2s ease-in-out; /* Animation */
+    }
+    .div3 { grid-area: 3 / 3 / 5 / 4; border: 1px solid navy; text-align: center; border-radius: 21px;    transition: transform .2s ease-in-out; /* Animation */
+    }
+    .div4 { grid-area: 3 / 4 / 5 / 5; border: 1px solid orange; text-align: center; border-radius: 21px;    transition: transform .2s ease-in-out; /* Animation */
+    }
+    .div5 { grid-area: 3 / 5 / 5 / 6; border: 1px solid yellow; text-align: center; border-radius: 21px;    transition: transform .2s ease-in-out; /* Animation */
+    }
+    .div6 { grid-area: 3 / 6 / 5 / 7; border: 1px solid magenta; text-align: center; border-radius: 21px;    transition: transform .2s ease-in-out; /* Animation */
+    } 
+
+    .div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover { 
+        transform: scale(1.1);
+    }
+
+    .parent div h5 { background: white;     text-align: center; border-top-right-radius: 21px; border-top-left-radius: 21px;
+        font-size: 21px;
+    }
+
+    .parent div p { 
+        
+        color: white;
+        
+
+    }
+
+    p {
+        padding-top: 20px;
+        text-align: center;
+        padding-left: 6px;
+
+    }
+
+    .icon { 
+
+        padding-top: 10px;
+        margin-top: 5px;
+        font-size: 100px; 
+        ;}
+
