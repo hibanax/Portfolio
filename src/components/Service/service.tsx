@@ -12,8 +12,8 @@ const Service = () => {
 
     const cardsOpacity = useTransform(
         scrollYProgress,
-        [0.56, 0.68],
-        [0, 1]
+        [0.83, 0.86, 0.88],
+        [0, 0.4, 1]
       );
     
     return (
@@ -21,29 +21,34 @@ const Service = () => {
 <motion.div className={styles.parent} style={{
         opacity: cardsOpacity,
     }}>
+
+        
 <div className={styles.div1}> <h5>React</h5>
 <FontAwesomeIcon className={styles.icon} icon={faReact} />
-      <p>Instagram clone with Firebase server done with React.js</p></div>
+
+      <p>Give best from parent to child </p></div>
 <div className={styles.div2}> <h5>Javascript</h5>
 <FontAwesomeIcon className={styles.icon} icon={faJs} />
 
-<p>Instagram clone with Firebase server done with React.js</p></div>
+<p>Make it more friendly to use</p></div>
 <div className={styles.div3}> <h5>HTML + CSS</h5>
 <FontAwesomeIcon className={styles.icon} icon={faHtml5} />
 <FontAwesomeIcon className={styles.icon} icon={faCss3} />
-<p>Instagram clone with Firebase server done with React.js</p></div>
+<p>Build solid structure with finess</p></div>
 <div className={styles.div4}> <h5>Firebase</h5>
 <FontAwesomeIcon className={styles.icon} icon={faCloud} />
 
-<p>Instagram clone with Firebase server done with React.js</p></div>
+<p>Done in real-time database</p></div>
 <div className={styles.div5}> <h5>Node.js</h5>
 <FontAwesomeIcon className={styles.icon} icon={faNodeJs} />
 
-<p>Instagram clone with Firebase server done with React.js</p></div>
+<p>Let everything work together</p></div>
 <div className={styles.div6}> <h5>React Native</h5>
 <FontAwesomeIcon className={styles.icon} icon={faMobileAlt} />
 
-<p>Instagram clone with Firebase server done with React.js</p></div>
+<p>Build mobile react applications</p></div>
+
+<div className={styles.div7}><h3>What I do the most ?</h3></div>
 </motion.div>
 
 

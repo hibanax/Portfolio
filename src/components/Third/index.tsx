@@ -10,7 +10,7 @@ const Third: React.FC = () => {
 
   const thirdX = useTransform(
     scrollYProgress,
-    [0.7, 0.89 ],
+    [0.7, 0.85 ],
     ['-250vh', '0vh']
   );
 

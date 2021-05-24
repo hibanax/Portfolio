@@ -43,15 +43,16 @@ export const Main = styled.main`
 
         .col h1 {
             max-width:2vw;
-            color: black;
+            color: #F9F5DE;
             font-size: 50px;
+            font-weight: 700;
             margin-bottom: 2vh;
         }
 
         p { 
             font-size: 20px;
             line-height: 30px;
-            
+            color: #F9F5DE;
             
         }
 
@@ -107,7 +108,7 @@ box-shadow: 0px 0px 5px 0.5px #F9F5DE;
     }
 
     .c {
-        background: #2B96C5;
+        background: #2bb6f2;
         width: 100%;
         height: 100%;
     }
@@ -144,6 +145,17 @@ box-shadow: 0px 0px 5px 0.5px #F9F5DE;
 
 .second {
     background: #3FB775;
+
+    .parent {
+display: grid;
+grid-template-columns: 1fr 0.2fr 0.3fr 0.75fr repeat(2, 1fr);
+grid-template-rows: repeat(7, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 3 / 2 / 6 / 3; }
+.div2 { grid-area: 3 / 4 / 6 / 6; }
     
 }
 }
