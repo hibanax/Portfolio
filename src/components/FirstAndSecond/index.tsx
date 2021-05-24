@@ -2,6 +2,8 @@ import { faOdnoklassniki } from '@fortawesome/free-brands-svg-icons';
 import { motion, useTransform, useViewportScroll } from 'framer-motion';
 import React from 'react';
 import { Sticky } from '../../styles';
+import About from '../About';
+import Projects from '../Projects';
 import Third from '../Third';
 import Video from '../Video/video';
 import photo from './photo.png';
@@ -37,7 +39,6 @@ const FirstAndSecond: React.FC = () => {
     <Sticky className="second">
       <First />
       
-
       
       <motion.div style={{
         position: 'absolute',
@@ -53,7 +54,7 @@ const FirstAndSecond: React.FC = () => {
         // x: firstX,
 
       }}>
-        <Video />
+        <Projects />
          </motion.div>
     </Sticky>
   )
@@ -145,7 +146,7 @@ const First: React.FC = () => {
         </div>
       </div>
 
-            <div className="b"><Third /></div>
+            <div className="b"><About /></div>
 
 
             <div className="c">
