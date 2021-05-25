@@ -24,7 +24,7 @@ export const Main = styled.main`
         .left-side {
             width: 50%;
             height: 100%;
-            background: #F73458
+            background: #F73458;
         }
 
         .row {
@@ -80,7 +80,7 @@ box-shadow: 0px 0px 5px 0.5px #F9F5DE;
                 
             }
 
-            .photo {
+            .lol {
                 margin-top: 12vh;
                 
 
@@ -104,7 +104,7 @@ box-shadow: 0px 0px 5px 0.5px #F9F5DE;
     .b {
         background: #F75334;
         width: 100%;
-        height: 100%
+        height: 100%;
     }
 
     .c {
@@ -157,7 +157,7 @@ grid-row-gap: 0px;
 .div1 { grid-area: 3 / 2 / 6 / 3; }
 .div2 { grid-area: 3 / 4 / 6 / 6; }
     
-}
+
 }
 `;
 

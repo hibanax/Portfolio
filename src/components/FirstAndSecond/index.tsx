@@ -3,7 +3,7 @@ import React from 'react';
 import { Sticky } from '../../styles';
 import About from '../About';
 import Projects from '../Projects';
-import photo from './photo.png';
+import lol from './photo.png';
 
 
 const FirstAndSecond: React.FC = () => {
@@ -138,7 +138,7 @@ const First: React.FC = () => {
                 x: rightSideX,
                 scale: rightSideScale,
               }}>
-                <img src={photo} className="photo" alt="photo"/>
+                <img src={lol} className="lol" alt="lol"/>
               </motion.div>
         </div>
       </div>
