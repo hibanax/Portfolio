@@ -33,13 +33,7 @@ const Fifth: React.FC = () => {
     [0.111, 1]
   )
 
-  const transitionx = { 
-    
-    visible:{
-    transition: {duration: 3, 
-    ease: '[0.43, 0.13, 0.23, 0.96]'}
-    }
-  }
+
 
 
   return (
@@ -55,7 +49,7 @@ const Fifth: React.FC = () => {
           opacity: svgOpacity,
           scale: svgScale,
         }}>
-      <img src={Turtle} className={styles.svg}
+      <img src={Turtle} className={styles.svg} alt="turtle"
             />
       </motion.div>
 

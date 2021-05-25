@@ -4,7 +4,7 @@ import Header from './components/Header';
 import FirstAndSecond from './components/FirstAndSecond';
 
 import GlobalStyles from './styles/global';
-import { Main, Section, Sticky } from './styles';
+import { Main, Section } from './styles';
 import Footer from './components/Footer';
 import Third from './components/Third';
 import Fourth from './components/Fourth';

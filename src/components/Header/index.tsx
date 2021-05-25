@@ -28,10 +28,10 @@ const Header: React.FC = () => {
           <nav>
             <ul>
             
-              <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Contact</a></li>
+              <li>Home</li>
+              <li>About</li>
+              <li>Portfolio</li>
+              <li>Contact</li>
             </ul>
           </nav>
         </div>

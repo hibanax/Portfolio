@@ -1,11 +1,8 @@
-import { faOdnoklassniki } from '@fortawesome/free-brands-svg-icons';
 import { motion, useTransform, useViewportScroll } from 'framer-motion';
 import React from 'react';
 import { Sticky } from '../../styles';
 import About from '../About';
 import Projects from '../Projects';
-import Third from '../Third';
-import Video from '../Video/video';
 import photo from './photo.png';
 
 
@@ -141,7 +138,7 @@ const First: React.FC = () => {
                 x: rightSideX,
                 scale: rightSideScale,
               }}>
-                <img src={photo} className="photo" />
+                <img src={photo} className="photo" alt="photo"/>
               </motion.div>
         </div>
       </div>
