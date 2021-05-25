@@ -1,0 +1,25 @@
+
+.quote {
+
+height: auto;
+    display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.quote q{
+
+font-size: 60px;
+line-height: 54px;
+word-spacing: 6px;
+padding: 40px;
+color: #EFFBF5;
+width: 40%;
+height: 20%;
+margin-top: 5%;
+
+border-width: 5px;
+border-radius: 36px;
+box-shadow: rgba(254, 255, 254, 0) 0px 3px 12px 18px inset, rgba(255, 255, 255, 0.768) 0px 0px 0px 0px inset, rgba(255, 255, 255, 0.309) 0px 0px 39px 3px ;
+}

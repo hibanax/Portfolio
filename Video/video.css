@@ -1,0 +1,90 @@
+.allcontainer {
+    width: inherit;
+    height: inherit;
+}
+
+.videoContainer {
+    
+    position: absolute;
+    border: 1px solid red;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: 100%;
+  grid-template-areas:
+    ". a a ."
+    ". a a .";
+    transition: transform 0.6s;
+}
+
+
+.vidContain {
+    width:15vw; 
+    height:30vh;
+    position:relative;
+    overflow: hidden;
+    border-radius: 15px;
+  align-self: center;
+  justify-self: center;
+  box-shadow: 0 3px 6px 10px rgba(0,0,0,0.16), 0 3px 3px 3px rgba(0,0,0,0.23);
+  transition: transform 0.6s;
+
+}
+
+
+
+    .vidContain:hover {
+        transform: translateY(-10px);
+    }
+
+.vid {
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+
+}
+.vidF {
+    width: 100%;
+}
+.vidT {
+    margin-top: -40px;
+    width: 100%;
+    position: relative;
+}
+/* .vidC {
+    
+} */
+
+
+.vid2 p {
+    color: black;
+}
+.vid2 h5 {
+    color: black;
+}
+
+.content {
+    position: absolute;
+    top:0; left:0;
+    background: rbga(255,255,255,.3);
+    color:white;
+}
+
+.content h5 {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.content p {
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+
+
